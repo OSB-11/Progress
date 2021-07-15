@@ -1,0 +1,16 @@
+#If a number is divisible by 3 and/or 4.
+
+num = input("Please enter a valid number: ")
+num = int(num)
+
+def check(num):
+    if num % 3 == 0 and num % 4 == 0:
+        print("The number is divisible by both 3 and 4")
+    elif num % 4 == 0:
+        print("The number is divisible by 4")
+    elif num % 3 == 0:
+        print("The number is divisible by 3")
+    else:
+        print("The number isn't divisible by either 3 or 4")
+
+check(num)
