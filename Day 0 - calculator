@@ -1,0 +1,18 @@
+# a = input("Enter a number: ")
+# b = input("Enter another number: ")
+# c = input("Enter operation ")
+#
+# def calc(a,b,c):
+#     if c == "ADD":
+#         result = float(a) + float(b)
+#         return result
+#     elif c == "SUB":
+#         result = float(a) - float(b)
+#         return result
+#     elif c == "MUL":
+#         result = float(a) * float(b)
+#         return result
+#     else:
+#         print("Invalid input")
+#
+# print("Answer: ", calc(a,b,c))
