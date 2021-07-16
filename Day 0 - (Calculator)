@@ -16,3 +16,20 @@
 #         print("Invalid input")
 #
 # print("Answer: ", calc(a,b,c))
+
+### A better Calculator ###
+
+def calc(a,b,c):
+    if c.upper() == "ADD":
+        result = float(a) + float(b)
+        return result
+    elif c.upper() == "SUB":
+        result = float(a) - float(b)
+        return result
+    elif c.upper() == "MUL":
+        result = float(a) * float(b)
+        return result
+    else:
+        print("Invalid input")
+
+print("Answer: ", calc(a,b,c))
