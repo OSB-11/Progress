@@ -1,0 +1,19 @@
+###*** Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10. ***###
+
+a = input("Enter a number: ")
+b = input("Enter another number: ")
+a = int(a)
+b = int(b)
+
+
+def fun(a, b):
+    if a + b == 10:
+        return True
+    elif a == 10 or b == 10:
+        return True
+    else:
+        print("Show me the ten's, baby!")
+
+
+isTen = fun(a, b)
+print("a: " + str(a) + " b: " + str(b) + " Therefore " + str(isTen))
