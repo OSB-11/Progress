@@ -1,0 +1,39 @@
+def twoPointer(x):
+    start = 0
+    end = len(x) - 1
+    flag = False
+
+    while start <= end:
+        if x[start] != x[end]:
+            flag = True
+            break
+        start = start + 1
+        end = end - 1
+    if flag:
+        print("TP: is palindrome")
+    else:
+        print("TP: is not pakindrome")
+
+
+check(x)
+twoPointer(x)
+
+#Code2
+
+ def check(x):
+     a = -1
+     flag = True
+     for i in x:
+         a = a + 1
+         y = x[len(x) - 1 - a]
+         if i == y:
+             flag = True
+         else:
+             flag = False
+             break
+     if flag:
+         print("is palindrome")
+     else:
+         print("is not palindrome")
+
+ check(x)
