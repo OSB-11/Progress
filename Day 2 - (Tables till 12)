@@ -1,0 +1,26 @@
+#$# Write a program that prints a multiplication table for numbers up to 12.
+
+
+## Using WHILE:
+
+for i in range(1, 13):
+    j =1
+    while j < 11:
+        print(str(i) + " x " + str(j) + " = " + str(i * j))
+        j = j + 1
+
+
+    print("--------------------------------------------")
+    
+    
+## Using FOR:
+   
+for i in range(1, 13):
+
+     for j in range(1,11):
+         print(str(i) + " x " + str(j) + " = " + str(i *j))
+    
+     print("---------------------------------------------")
+         
+    
+    
