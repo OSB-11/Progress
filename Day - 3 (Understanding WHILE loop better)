@@ -1,0 +1,18 @@
+## First Way
+
+x = " "
+while True:
+  x = input("Enter something: ")
+  if x == "exit":
+    print("Abort!")
+    break
+    
+ ### Second Way   
+ 
+ x = " "
+ while x != "exit":
+  x = input("Enter something: ")
+  
+  if x == "exit":
+    print("Avlida")
+    
