@@ -1,0 +1,25 @@
+arr = [2,5,3,4,7,4]
+target = 8
+j = 0
+
+for i in range(len(arr)):
+    for j in range(i+1, len(arr), 1):
+        sum = arr[i] + arr[j]
+
+        if sum == target:
+            print("Success!")
+            
+# Optimization
+
+arr = [2,5,3,4,7,4]
+target = 8
+
+d = { }
+for i in range(len(arr)):
+    x = target - arr[i]
+    if x in d:
+        print("Success!")
+        print(arr[i], x)
+       # break
+    else:
+        d[arr[i]] = i
