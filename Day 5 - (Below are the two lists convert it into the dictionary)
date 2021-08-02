@@ -1,0 +1,27 @@
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+
+d ={ }
+d = dict(zip(keys,values))
+print(d)
+for i in range(len(keys)):
+        d[keys[i]] = values[i]
+print(d)
+
+
+##SECOND METHOD:
+dd = {}
+
+print(zip(keys,values))
+for i,j in zip(keys,values):
+    print((i,j))
+    dd[i] = j
+print(dd)
+
+
+##THIRD METHOD:
+for i in range(len(keys)):
+    for j in range(len(values)):
+        d[keys[i]] = values[j]
+
+print(d)
