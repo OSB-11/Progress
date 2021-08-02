@@ -1,0 +1,26 @@
+sampleDict = {
+   "class":{
+      "student":{
+         "name":"Mike",
+         "marks":{
+            "physics":70,
+            "history":[1,2,3,4]
+         }
+      }
+   }
+}
+
+a = sampleDict["class"]
+# print(a)
+
+b = a["student"]
+# print(b)
+
+c = b["marks"]
+# print(c)
+
+d = c["history"]
+print(d)
+
+##SECOND METHOD: ##
+print(sampleDict["class"]["student"]["marks"]["history"][1])
